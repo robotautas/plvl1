@@ -1,6 +1,6 @@
 # Tuples
 
-Tuplas yra nekintama iteruojama duomenų struktūra python'e.
+Tuplas yra nekintama iteruojama duomenų kolekcija python'e.
 
 ```python
 savaite = ('pirmadienis', 'antradienis', 'treciadienis', 'ketvirtadienis', 'penktadienis', 'sestadienis', 'sekmadienis')
