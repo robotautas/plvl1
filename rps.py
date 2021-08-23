@@ -1,4 +1,5 @@
 # rock paper scissors
+# TODO: pataisyti, kad būtų galimos lygiosios :D
 from random import randint
 
 while True:
