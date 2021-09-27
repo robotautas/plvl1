@@ -75,3 +75,38 @@ kad API raktas turi būti nurodytas URL eilutės parametruose, ten jį ir įdėj
 [Webbrowser](https://docs.python.org/2/library/webbrowser.html) yra paprasta biblioteka, valdanti naršyklę.
 Beje, neviešinkite savo API rakto, nes gali atsirasti piktnaudžiautojų, dėl kurių veiksmų jums gali būti 
 apribota paslauga, kai kuriais atvejais (pvz. Google) išrašyta sąskaita. 
+
+# UŽDUOTYS
+
+# 1
+Sukurkite programą, kuri duoda įvestos valiutų poros dabartinį kursą. Naudokitės https://api.frankfurter.app/. 
+Dokumentaciją rasite [Čia](https://www.frankfurter.app/docs/). Rezultatas galėtų atrodyti taip:
+```python
+get_rate('EUR', 'GBP')
+# EUR-GBP:	0.84828
+
+get_rate('ZZZ', 'GBP')
+# Neteisingai suvestos valiutos. Galimų variantų sąrašas:
+# ['AUD', 'BGN', 'BRL', 'CAD', 'CHF', 'CNY', 'CZK', 'DKK', 'EUR', 'GBP', 'HKD', 'HRK', 'HUF', 'IDR', 'ILS', 'INR', 'ISK', 'JPY', 'KRW', 'MXN', 'MYR', 'NOK', 'NZD', 'PHP', 'PLN', 'RON', 'RUB', 'SEK', 'SGD', 'THB', 'TRY', 'USD', 'ZAR']
+```
+# 2
+Sukurkite programą, kuri ieškotų receptų pagal parametruose pateiktą reikšmę ir išsaugotų rezultatą 
+<paieškos žodis>.html faile. Paskui atidarytų tą failą naršyklėje (*import webbrowser*). Naudokite šį 
+[resursą](http://www.recipepuppy.com/about/api/). Rezultatas turėtų atrodyti maždaug [taip:](https://github.com/robotautas/kursas/blob/master/requests/salmon.png)
+
+# 3
+Naudodami tą pačią Frankfurter API (kaip ir pirmoje užduotyje), sukurkite programą, kuri pagal parametruose pateiktas valiutų poras, 
+periodo pradžios ir pabaigos datą surastų dienas kai kursas buvo aukščiausias ir kai kursas buvo žemiausias
+Maždaug taip:
+
+```python
+currency_pair_analysis('EUR', 'GBP', '2019-01-01', '2019-12-31')
+
+    # Valiutų poroje EUR-GBP, periode nuo 2019-01-01 iki 2019-12-31:
+    # Žemiausias kursas buvo 2019-12-09 - 0.84116
+    # Aukščiausias kursas buvo 2019-08-12 - 0.92203
+```
+
+
+
+
